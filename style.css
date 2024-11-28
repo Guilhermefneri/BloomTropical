@@ -49,10 +49,16 @@
         }
 
         .logo {
-            color: var(--white);
+            color: var(--black);
             text-decoration: none;
             font-size: 16px;
             font-weight: 500;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .nav-links {
@@ -62,7 +68,7 @@
         }
 
         .nav-link {
-            color: var(--white);
+            color: var(--black);
             text-decoration: none;
             font-size: 14px;
             transition: opacity 0.3s;
@@ -398,7 +404,6 @@
         }
 
         #flower-logo{
-            position: absolute;
-            top: 8rem;
-            right: 19rem;
+           width: 82px;
+           margin-bottom: 8px;
         }
