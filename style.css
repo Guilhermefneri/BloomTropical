@@ -93,15 +93,16 @@
             padding: 40px;
             max-width: 1232px;
             margin: 48px auto;
-            color: var(--white);
+            color: var(--black);
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             margin-top: 9rem;
         }
 
         .booking-title {
+            color: var(--black);
             font-size: 42px;
             margin-bottom: 10px;
-            text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
         }
 
         .booking-subtitle {
