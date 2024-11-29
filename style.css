@@ -184,17 +184,18 @@
         .banner {
             background-color: var(--primary-color);
             padding: 43px 0 70px;
-            color: var(--white);
+            color: var(--black);
         }
 
         .banner h1{
             text-align: center;
+            color: var(--black);
             font-size: 3rem;
             text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
             display: flex;
             margin: 0 auto 50px auto;
             width: 83%;
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid var(--black);
             padding-bottom: 24px;
         }
 
@@ -210,9 +211,9 @@
         }
 
         .banner-text p{
-            font-weight: lighter;
+            font-weight: 300;
             margin-top: 50px;
-            text-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
         }
 
         .categories {
@@ -314,7 +315,7 @@
             display: flex;
             margin-top: 40px;
             box-shadow: 0 7px 13px 0px rgba(0, 0, 0, 0.1);
-            border-radius: 0 8px 8px 0;
+            border-radius: 0 8px 8px 8px;
         }
 
         .newsletter-input {
