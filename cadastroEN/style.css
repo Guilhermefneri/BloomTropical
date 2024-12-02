@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
     background: #dfdfdf;
 }
-.login-box {
+.cadastro-box {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -21,11 +21,11 @@ body {
     height: 480px;
     padding: 30px;
 }
-.login-header {
+.cadastro-header {
     text-align: center;
     margin: 20px 0 40px 0;
 }
-.login-header header {
+.cadastro-header header {
     color: #333;
     font-size: 30px;
     font-weight: 600;
@@ -131,6 +131,26 @@ section a {
 .language-btn:hover {
     background: #000; 
     transform: scale(1.05, 1);
+}
+
+.cadastro-box .btn-redes button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    color: #222;
+    margin: 0 4px;
+    transition: .2s;
+    margin-left: 52px;
+    margin-top: 20px;
+}
+
+.cadastro-box .btn-redes button:hover{
+    transform: scale(1.05, 1);
+    box-shadow: 0 0 5px #333;
 }
 
 /*STYLE CHATBOT */

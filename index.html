@@ -6,6 +6,9 @@
     <title>BloomTropical</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fim Bootstrap icons-->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/logoPag.png" type="image/x-icon">
 </head>
@@ -215,5 +218,20 @@
             </div>
         </div>
     </footer>
+    <!--CHATBOT-->
+    <div id="chatbot">
+        <div id="chatbot-header">
+            <span>Chatbot</span>
+            <button id="close-chatbot">x</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem..." />
+            <button id="send-message">Enviar</button>
+        </div>
+    </div>
+    <button id="open-chatbot"><i class="bi bi-flower3"></i></button>
+    <!--END CHATBOT-->
+    <script src="script.js"></script>
 </body>
 </html>

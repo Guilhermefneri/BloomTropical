@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fim Bootstrap icons-->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/image/logoPag.png" type="image/x-icon">
     <title>Login | Bloom Tropical</title>
@@ -36,8 +39,23 @@
             <label for="submit">Sign In</label>
         </div>
         <div class="sign-up-link">
-            <p>Don't have account? <a href="/Cadastro/Cadastro.html">Sign Up</a></p>
+            <p>Don't have account? <a href="/cadastroEN/cadastro.html">Sign Up</a></p>
         </div>
     </div>
+    <!--CHATBOT-->
+    <div id="chatbot">
+        <div id="chatbot-header">
+            <span>Chatbot</span>
+            <button id="close-chatbot">x</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem..." />
+            <button id="send-message">Enviar</button>
+        </div>
+    </div>
+    <button id="open-chatbot"><i class="bi bi-flower3"></i></button>
+    <!--END CHATBOT-->
+    <script src="/script.js"></script>
 </body>
 </html>
