@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,700&display=swap");
+
+:root {
+  --primary-color: #e78b55;
+  --secondary-color: #5bb5ab;
+  --accent-color: #968ab6;
+  --background-color: #f5f5f5;
+  --text-dark: #1a1a1a;
+  --text-light: #8c8c8c;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-dark);
+  line-height: 1.5;
+  font-family: "Poppins";
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+  position: relative;
+  height: 742px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #222222a6, #8c8c8c00);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 160px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 72px;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 14px;
+  transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Booking Section */
+.booking-section {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 1232px;
+  margin: 48px auto;
+  color: var(--black);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 9rem;
+}
+
+.booking-title {
+  color: var(--black);
+  font-size: 42px;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.booking-subtitle {
+  font-size: 22px;
+  margin-bottom: 48px;
+}
+
+.booking-form {
+  background: var(--white);
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-dark);
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.location-group,
+.schedule-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.search-button {
+  background: var(--secondary-color);
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #4a9e95;
+}
+
+/* Why Choose Us Section */
+.why-choose {
+  padding: 96px 0 112px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 33px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 104px;
+  max-width: 1048px;
+  margin: 0 auto;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  background: #eaf9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+/* Banner Section */
+.banner {
+  background-color: var(--primary-color);
+  padding: 43px 0 70px;
+  color: var(--black);
+}
+
+.banner h1 {
+  text-align: center;
+  color: var(--black);
+  font-size: 3rem;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  margin: 0 auto 50px auto;
+  width: 83%;
+  border-bottom: 1px solid var(--black);
+  padding-bottom: 24px;
+}
+
+.banner-content {
+  max-width: 1362px;
+  margin: 0 auto;
+  display: flex;
+  gap: 103px;
+}
+
+.banner-text {
+  max-width: 667px;
+}
+
+.banner-text p {
+  font-weight: 300;
+  margin-top: 50px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.category {
+  position: relative;
+}
+
+.category img {
+  width: 184px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+figcaption {
+  font-weight: 500;
+}
+
+/* Products Section */
+.products {
+  padding: 112px 160px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card img {
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.product-name {
+  color: var(--accent-color);
+  margin: 8px 0;
+}
+
+.product-price {
+  font-weight: 600;
+}
+
+.rating {
+  color: #ffd700;
+  margin-top: 8px;
+}
+
+.more-categories {
+  padding: 9px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Newsletter Section */
+.newsletter {
+  display: flex;
+  margin: 48px auto;
+  background-color: #f2f2f2;
+  max-width: 1024px;
+}
+
+.newsletter-image {
+  width: 428px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+.newsletter-content {
+  display: flex;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 40px;
+  box-shadow: 0 7px 13px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0 8px 8px 8px;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 16px 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px 0 0 8px;
+  width: 23rem;
+}
+
+.newsletter-button {
+  background: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  padding: 16px 32px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+#nw-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 83px;
+}
+
+#nw-content h2 {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background: var(--black);
+  padding: 64px 160px 32px;
+  color: var(--white);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.footer-column h3 {
+  color: var(--white);
+  margin-bottom: 32px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-link {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--white);
+}
+
+.social-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  border-top: 1px solid #333;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 16px;
+}
+
+.payment-icon {
+  border-radius: 4px;
+  height: 48px;
+  width: 63px;
+}
+
+#flower-logo {
+  width: 82px;
+  margin-bottom: 8px;
+}
+
+/*STYLE CHATBOT */
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Inicialmente escondido */
+  flex-direction: column;
+}
+
+#open-chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Alterado para o lado direito */
+  background: #e78b55;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#open-chatbot:hover {
+  color: #333;
+  background-color: #ec742e;
+  transition: 0.3s;
+  box-shadow: 0 0 8px #e78b55;
+}
+
+#chatbot-header {
+  background: #e78b55;
+  color: #000;
+  font-weight: 800;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+
+#chatbot-header button {
+  border-radius: 50%;
+  border: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000000;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+#chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #222;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 15px;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #00000093;
+  color: #fff;
+  font-size: 12px;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #00000093;
+  color: #fff;
+  font-size: 12px;
+}
+
+#chatbot-input {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+#chatbot-input input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#chatbot-input button {
+  background: #e78b55;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 40px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#chatbot-input button:hover {
+  background-color: #ec742e;
+  color: #333;
+}
