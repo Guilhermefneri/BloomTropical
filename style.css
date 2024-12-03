@@ -42,7 +42,7 @@ body {
 /* Header Styles */
 .header {
   position: relative;
-  height: 742px;
+  height: 642px;
   width: 100%;
   background-image: linear-gradient(to bottom, #222222a6, #8c8c8c00);
 }
@@ -99,7 +99,7 @@ body {
   background-color: var(--primary-color);
   border-radius: 8px;
   padding: 40px;
-  max-width: 1232px;
+  max-width: 78%;
   margin: 48px auto;
   color: var(--black);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -312,7 +312,6 @@ figcaption {
 
 .newsletter-content {
   display: flex;
-  flex-direction: column;
   gap: 20px;
 }
 
@@ -558,8 +557,28 @@ figcaption {
     margin-top: 3rem;
   }
 
+  .features {
+    flex-direction: column;
+  }
+
+  .why-choose > .section-title {
+    margin-top: 19rem;
+  }
+
+  .banner-content {
+    flex-direction: column;
+  }
+
+  .products {
+    padding: 45px 73px;
+  }
+
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter-content {
+    flex-direction: column;
   }
 
   .footer {
@@ -601,6 +620,16 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
+
+  .category:nth-child(3) {
+    grid-column: span 2; /* O terceiro item ocupa as duas colunas */
+    justify-self: center; /* Centraliza horizontalmente */
+  }
+
   .footer-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -615,6 +644,10 @@ figcaption {
   .newsletter {
     flex-direction: column;
     padding: 20px;
+  }
+
+  .newsletter-content {
+    flex-direction: column;
   }
 
   .newsletter-image {
